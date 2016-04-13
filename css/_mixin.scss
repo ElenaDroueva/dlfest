@@ -1,0 +1,62 @@
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+// @include border-radius(5px);
+
+@mixin transition($property, $duration, $timing){
+  -webkit-transition: $property $duration+s $timing;
+     -moz-transition: $property $duration+s $timing;
+      -ms-transition: $property $duration+s $timing;
+       -o-transition: $property $duration+s $timing;
+          transition: $property $duration+s $timing;
+}
+// @include transition( all, 0.3, linear);
+
+@mixin scale($scale) {
+  transform: scale($scale);
+  -o-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -webkit-transform: scale($scale);
+}
+// @include scale(1);
+@mixin translate3d($x, $y, $z) {
+  -o-transform: translate3d($x+px, $y+px, $z+px);
+  -ms-transform: translate3d($x+px, $y+px, $z+px);
+  -moz-transform: translate3d($x+px, $y+px, $z+px);
+  -webkit-transform: translate3d($x+px, $y+px, $z+px);
+  transform: translate3d($x+px, $y+px, $z+px);
+}
+// @include translate3d(1, 2, 3);
+
+@mixin background-size($background-size) {
+	-webkit-background-size: $background-size;
+	-moz-background-size: $background-size;
+	background-size: $background-size;
+}
+// @include background-size(cover);
+
+@mixin opacity($opacity){
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	opacity: $opacity;
+}
+// @include opacity(.5);
+
+@mixin filter($filter){
+	-webkit-filter: opacity($filter);
+   -moz-filter: opacity($filter);
+   -ms-filter: topacity($filter);
+   -o-filter: opacity($filter);
+   filter: opacity($filter);
+}
+// @include filter(50%);
+
+@mixin animation($animation){
+	-webkit-animation: $animation;
+	-moz-animation: $animation;
+	-o-animation: $animation;
+	animation: $animation;
+}
+// @include animation(first 4s 0s infinite alternate);

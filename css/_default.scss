@@ -1,0 +1,30 @@
+//COLOR
+$c-white: #ffffff;
+$c-black: #060606;
+$c-blue: #04305d;
+$c-red: #da1a20;
+$c-yellow: #ffde00;
+$c-orange: #f7961d;
+$c-green: #678a1e;
+$c-brown: #796c5f;
+$c-l-gray: #adadad;
+$c-d-gray: #3d3b3b;
+
+//FONTS
+$arianAmu: 'ArianAMU', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$hp600Caps: 'hp600Caps', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$ptSerifCaption: 'ptserifcaption', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$quadrata: 'quadrata', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+section {
+	position: relative;
+}
+
+
